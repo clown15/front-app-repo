@@ -51,7 +51,7 @@ function App(props) {
     fetchData();
     // eslint-disable-next-line
   }, [search]);
-  
+
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{ background: '#2E3B55' }}>
@@ -64,7 +64,7 @@ function App(props) {
             align="center"
             className={classes.title}
           >
-            EKS DEMO Blog
+            EKS DEMO Blog Version 1
           </Typography>
           {new Date().toLocaleTimeString()}
         </Toolbar>
@@ -73,7 +73,7 @@ function App(props) {
 
       <UpperPage key={1} />
       <br/>
-      
+
       <form className={classes.searchRoot} noValidate autoComplete="off">
         <TextField
           id="standard-basic"
